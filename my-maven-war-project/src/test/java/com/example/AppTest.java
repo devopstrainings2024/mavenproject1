@@ -1,14 +1,10 @@
-package com.example;
-
 import org.junit.Test;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class AppTest {
-
     @Test
-    public void testApp() {
+    public void testGetMessage() {
         App app = new App();
-        String result = app.getMessage();
-        assertEquals("Hello, World!", result);
+        assertEquals("Hello, World!", app.getMessage());
     }
 }
